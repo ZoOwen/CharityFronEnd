@@ -10,8 +10,16 @@ function Header(props) {
   var querystring = require("querystring");
   const history = useHistory();
   const isLogged = useSelector((state) => state.user);
-  let decode = jwt(localStorage.getItem("token"));
-  let id = decode.id;
+
+  var decode;
+  var id = 2;
+  console.log("status loginn", isLogged);
+  if (isLogged == false) {
+    decode = jwt(localStorage.getItem("token"));
+    id = decode.id;
+  } else {
+    console.log("login");
+  }
   console.log(isLogged);
   const [Img, setImg] = useState("");
   const [judulEvent, setJudulEvent] = useState("");

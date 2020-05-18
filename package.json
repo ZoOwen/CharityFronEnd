@@ -24,7 +24,6 @@
     "redux-thunk": "^2.3.0",
     "sweetalert": "^2.1.2"
   },
-  "homepage": "https://hopeful-payne-8acdcd.netlify.app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

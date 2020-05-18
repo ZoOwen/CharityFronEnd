@@ -1,0 +1,27 @@
+.bgimage {
+  background-image: url("https://charity.w3itexperts.com/images/banner/bnr1.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.box {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.titlebanner {
+  margin-top: 100px !important;
+  margin-left: 20px !important;
+  font-family: "PT sans", sans-serif;
+  color: #fff;
+}

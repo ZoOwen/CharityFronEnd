@@ -1,0 +1,31 @@
+/* body {
+  background: #e2e1e0;
+  text-align: center;
+} */
+.div {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  color: #363636 !important;
+  font-family: "PT sans", sans-serif;
+}
+td {
+  text-align: left;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}

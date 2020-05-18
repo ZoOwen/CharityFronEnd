@@ -130,6 +130,13 @@ function Header(props) {
             >
               Hubungi
             </Nav.Link>
+            <Nav.Link
+              href="#"
+              className="mx-2"
+              onClick={() => props.history.push("/profile")}
+            >
+              Profile
+            </Nav.Link>
             {/* <Button
               variant="dark"
               className="ml-5 mr-1"

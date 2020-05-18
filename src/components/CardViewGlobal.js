@@ -31,7 +31,7 @@ function CardView(props) {
   console.log(props);
 
   return (
-    <div className="container-fluid" style={{ marginLeft: "60px" }}>
+    <div className="container-fluid">
       <div className="row">
         {histori.map((item, index) => (
           <Card style={{ width: "18rem" }} key={item.Id}>

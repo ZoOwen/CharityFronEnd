@@ -51,7 +51,7 @@ const About = () => {
                   Crowdfunding adalah kegiatan mengumpulkan dana yang melibatkan
                   banyak orang untuk mewujudkan satu tujuan
                 </p>
-                <button className="readmore">Read More</button>
+                <button className="readmore">Selengkapnya</button>
               </div>
             </div>
           </div>

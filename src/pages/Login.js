@@ -73,12 +73,17 @@ function Login() {
           <div className="submit">
             <div className="row">
               <div className="col-md-6">
-                <button className="btn btn-primary btn-block" type="submit">
+                <button
+                  style={{ marginTop: "10px", marginBottom: "10px" }}
+                  className="btn btn-primary btn-block"
+                  type="submit"
+                >
                   Login
                 </button>
               </div>
               <div className="col-md-6">
                 <button
+                  style={{ marginTop: "10px", marginBottom: "10px" }}
                   className="btn btn-primary btn-block"
                   onClick={handleClick}
                 >

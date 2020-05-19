@@ -21,21 +21,21 @@ function ParallaxContent() {
                   <h2>
                     <strong>4897</strong>
                   </h2>
-                  <p className="text-center pt-0">Charity Chart</p>
+                  <p className="text-center pt-0">Grafik Donasi</p>
                 </div>
                 <div className="col justify-content-center col-md-3 col-sm-6 col-xs-12 col-parallax">
                   <img className="small-icon" src={imgLogo3} alt="" />
                   <h2>
                     <strong>5897</strong>
                   </h2>
-                  <p className="text-center pt-0">Donation</p>
+                  <p className="text-center pt-0">Donatur</p>
                 </div>
                 <div className="col justify-content-center col-md-3 col-sm-6 col-xs-12 col-parallax">
                   <img className="small-icon" src={imgLogo4} alt="" />
                   <h2>
                     <strong>58397</strong>
                   </h2>
-                  <p className="text-center pt-0">Helping Hand</p>
+                  <p className="text-center pt-0">Terbantu</p>
                 </div>
               </div>
             </div>

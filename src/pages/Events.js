@@ -157,7 +157,8 @@ const Events = () => {
             <div className="container">
                 <div className="row box-e">
                     {eventState.map((item) => {
-                        console.log(item);
+                        console.log("item ", item);
+                        console.log(item.length, "total donasi");
                         return (
                             <div className="col-md-6 my-2 mx-0">
                                 <div className="row card rounded-lg">

@@ -1,43 +1,71 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import imgPerson1 from "../../assets/img/firstperson.jpg";
-import imgPerson2 from "../../assets/img/secondperson.jpg";
-import imgPerson3 from "../../assets/img/firstperson2.jpg";
-import imgPerson4 from "../../assets/img/secondperson2.jpg";
+import imgPerson1 from "../../assets/img/raif.jpeg";
+import imgPerson2 from "../../assets/img/jumadi.jpeg";
+import imgPerson3 from "../../assets/img/khairavi.jpeg";
+import imgPerson4 from "../../assets/img/rubi.jpeg";
+import imgPerson5 from "../../assets/img/zaki.jpeg";
 
 function SecondCard() {
   return (
     <div>
-      <div className="last-card-content mt-5">
+      <div className="container-fluid mt-3">
         <div className="row">
-          <Card style={{ width: "15rem" }}>
-            <Card.Img variant="top" src={imgPerson1} alt="" />
-            <Card.Body>
-              <h4 className="text-center">Jannatul Ferdous</h4>
-              <h6 className="text-center">Senior Volunteer</h6>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "15rem" }}>
-            <Card.Img variant="top" src={imgPerson2} alt="" />
-            <Card.Body>
-              <h4 className="text-center">Zubayer Hasan</h4>
-              <h6 className="text-center">Head of Volunteer</h6>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "15rem" }}>
-            <Card.Img variant="top" src={imgPerson3} alt="" />
-            <Card.Body>
-              <h4 className="text-center">Jannatul Ferdous</h4>
-              <h6 className="text-center">CEO</h6>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "15rem" }}>
-            <Card.Img variant="top" src={imgPerson4} alt="" />
-            <Card.Body>
-              <h4 className="text-center">Zubayer Hasan</h4>
-              <h6 className="text-center">Event Manager</h6>
-            </Card.Body>
-          </Card>
+          <div className="col d-flex justify-content-center">
+            <Card style={{ width: "15rem" }}>
+              <Card.Img variant="top" src={imgPerson1} alt="" />
+              <Card.Body>
+                <h4 className="text-center" style={{ color: "#F75D08" }}>
+                  Raif Fahmi
+                </h4>
+                <h6 className="text-center">Full Stack Developer</h6>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <Card style={{ width: "15rem" }}>
+              <Card.Img variant="top" src={imgPerson2} alt="" />
+              <Card.Body>
+                <h4 className="text-center" style={{ color: "#F75D08" }}>
+                  Muhammad Jumadi
+                </h4>
+                <h6 className="text-center">Full Stack Developer</h6>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <Card style={{ width: "15rem" }}>
+              <Card.Img variant="top" src={imgPerson3} alt="" />
+              <Card.Body>
+                <h4 className="text-center" style={{ color: "#F75D08" }}>
+                  Muhammad Khairavi
+                </h4>
+                <h6 className="text-center">Backend Developer</h6>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <Card style={{ width: "15rem" }}>
+              <Card.Img variant="top" src={imgPerson4} alt="" />
+              <Card.Body>
+                <h4 className="text-center" style={{ color: "#F75D08" }}>
+                  Rubi Anggoro
+                </h4>
+                <h6 className="text-center">Frontend Developer</h6>
+              </Card.Body>
+            </Card>
+          </div>
+          <div className="col d-flex justify-content-center">
+            <Card style={{ width: "15rem" }}>
+              <Card.Img variant="top" src={imgPerson5} alt="" />
+              <Card.Body>
+                <h4 className="text-center" style={{ color: "#F75D08" }}>
+                  Zaki Khairi
+                </h4>
+                <h6 className="text-center">Frontend Developer</h6>
+              </Card.Body>
+            </Card>
+          </div>
         </div>
       </div>
     </div>

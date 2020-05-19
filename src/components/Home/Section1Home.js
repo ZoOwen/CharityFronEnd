@@ -26,8 +26,8 @@ function Section1Home() {
               </h4>
               <h6 className="text-white">
                 <strong>
-                  Melalui Kitabisa, Anda dapat menggalang dana bantuan bagi
-                  orang yang membutuhkan
+                  Melalui Charity, Anda dapat menggalang dana bantuan bagi orang
+                  yang membutuhkan
                 </strong>
               </h6>
               <p>

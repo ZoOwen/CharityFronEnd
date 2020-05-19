@@ -12,13 +12,13 @@ function Header(props) {
   const isLogged = useSelector((state) => state.user);
 
   var decode;
-  var id = 2;
-  console.log("status loginn", isLogged);
-  if (isLogged == false) {
+  var id;
+
+  if (localStorage.getItem("token") != null) {
     decode = jwt(localStorage.getItem("token"));
     id = decode.id;
   } else {
-    console.log("login");
+    console.log("cek gk login");
   }
   console.log(isLogged);
   const [Img, setImg] = useState("");

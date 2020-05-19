@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import jwt from "jwt-decode";
-import { Redirect, useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import swal from "sweetalert";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,7 +19,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { getDataEvent } from "../Redux/Actions/HistoryActions";
 
 const Events = () => {
-  const history = useHistory();
   var querystring = require("querystring");
   const [singleEvent, setSingleEvent] = useState([]);
   const eventState = useSelector((state) => state.getEvent.data);
@@ -35,22 +34,13 @@ const Events = () => {
   //getdata from localstorage dan get user
   const isLogged = useSelector((state) => state.user);
   console.log("Logged", isLogged);
-  var decode;
-  var token;
-  const [dataUser, setDataUser] = useState([]);
-  console.log(isLogged);
-  if (isLogged == false) {
-    history.push("/login");
-  } else {
-    decode = jwt(localStorage.getItem("token"));
-    token = localStorage.getItem("token");
-  }
+  let decode = jwt(localStorage.getItem("token"));
   let id = decode.id;
-
+  let token = localStorage.getItem("token");
   console.log(token);
   console.log("hasil decode", decode);
   console.log("hasil ID decode", id);
-
+  const [dataUser, setDataUser] = useState([]);
   var api = `https://backend-go-charity.herokuapp.com/users/${id}`;
 
   useEffect(() => {

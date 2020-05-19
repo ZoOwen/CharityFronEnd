@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 import { withRouter } from "react-router-dom";
+import jwt from "jwt-decode";
 import {
   getDataEvent,
   postDataEvent,
@@ -9,12 +10,23 @@ import {
 
 import { Card } from "react-bootstrap";
 function CardView(props) {
+  const isLogged = useSelector((state) => state.user);
+  var decode;
+  var id;
+
+  if (localStorage.getItem("token") != null) {
+    decode = jwt(localStorage.getItem("token"));
+    id = decode.id;
+  } else {
+    console.log("cek gk login");
+  }
+
+  console.log("id loh", id);
+
   console.log("props awal", props);
   const [mainEvent, setMainEvent] = useState("");
   const getData = props.getDataEvent;
   const handleDesc = (Id) => {
-    console.log("data yang didapat" + props);
-
     props.history.push(`/history/${Id}`);
   };
   useEffect(() => {
@@ -24,13 +36,20 @@ function CardView(props) {
     props.deleteDataEvent(id);
   };
 
-  console.log(props);
+  const dataEvent = props.mainEvent;
+  var filterEvent = dataEvent.filter(function (event) {
+    return event.id_user == id;
+  });
+
+  console.log("id decode", id);
+  console.log("hasil filter event", filterEvent);
+  console.log("id event", dataEvent.Id_user);
 
   return (
-    <div>
-      <div className="container">
+    <div style={{ overflowX: "hidden", overflowY: "hidden" }}>
+      <div className="container-fluid" style={{ marginLeft: "70px" }}>
         <div className="row">
-          {props.mainEvent.map((item, index) => (
+          {filterEvent.map((item, index) => (
             <Card style={{ width: "18rem" }} key={item.Id}>
               <Card.Img
                 variant="top"

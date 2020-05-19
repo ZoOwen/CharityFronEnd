@@ -46,7 +46,8 @@ function CardView(props) {
               </Card.Subtitle>
 
               <Card.Text style={{ color: "#363636" }}>
-                Total donasi yang sudah terkumpul adalah {item.TotalDonasi}
+                Total donasi yang sudah terkumpul adalah Rp.
+                <b>{item.TotalDonasi}</b>
               </Card.Text>
               <hr />
             </Card.Body>

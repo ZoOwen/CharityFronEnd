@@ -50,28 +50,32 @@ function Profile() {
             <h3>
               <strong>Personal Profile</strong>
             </h3>
-            <table style={{ marginLeft: "490px" }}>
-              <tr>
-                <td>Username </td>
-                <td> : </td>
-                <td>{dataUser.items.Name}</td>
-              </tr>
-              <tr>
-                <td>Email </td>
-                <td> : </td>
-                <td>{dataUser.items.Email}</td>
-              </tr>
-              <tr>
-                <td>Address </td>
-                <td> : </td>
-                <td>{dataUser.items.Address}</td>
-              </tr>
-              <tr>
-                <td>No telp. </td>
-                <td> : </td>
-                <td>{dataUser.items.Telp}</td>
-              </tr>
-            </table>
+            <center>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Username </td>
+                    <td> : </td>
+                    <td>{dataUser.items.Name}</td>
+                  </tr>
+                  <tr>
+                    <td>Email </td>
+                    <td> : </td>
+                    <td>{dataUser.items.Email}</td>
+                  </tr>
+                  <tr>
+                    <td>Address </td>
+                    <td> : </td>
+                    <td>{dataUser.items.Address}</td>
+                  </tr>
+                  <tr>
+                    <td>No telp. </td>
+                    <td> : </td>
+                    <td>{dataUser.items.Telp}</td>
+                  </tr>
+                </thead>
+              </table>
+            </center>
           </div>
         </div>
       </div>

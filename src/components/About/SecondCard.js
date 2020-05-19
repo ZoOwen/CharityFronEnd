@@ -8,7 +8,7 @@ import imgPerson4 from "../../assets/img/secondperson2.jpg";
 function SecondCard() {
   return (
     <div>
-      <div className="last-card-content">
+      <div className="last-card-content mt-5">
         <div className="row">
           <Card style={{ width: "15rem" }}>
             <Card.Img variant="top" src={imgPerson1} alt="" />

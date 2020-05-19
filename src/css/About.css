@@ -72,10 +72,10 @@ li {
   letter-spacing: 2px;
 }
 
-.OurStory > p {
+.OurStory > p.about-description {
   width: 700px;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   padding-top: 5px;
   color: #9897a0;
   text-align: center;
@@ -104,23 +104,9 @@ p.paragraph-right:nth-child(1) {
   color: #767676;
 }
 
-h3 {
-  font-size: 18px;
+h3.charity-title {
+  font-size: 25px;
   color: #767676;
-}
-
-.card-content {
-  margin-top: 30px;
-}
-
-.card-content > .row {
-  margin-right: -60px;
-}
-
-@media (max-width: 768px) {
-  .card-content > .row {
-    margin-right: -15px;
-  }
 }
 
 button.readmore {
@@ -145,16 +131,6 @@ div.card-header {
   background-color: white;
 }
 
-div.card {
-  margin-top: 20px;
-  border-radius: 0;
-  border-width: 1px;
-  margin-left: 10px;
-  margin-right: 15px;
-  border-color: #767676;
-  border-style: solid;
-}
-
 img.card-img-top {
   border-radius: 0;
 }
@@ -173,8 +149,8 @@ p.card-text {
   color: #767676;
 }
 
-.react-parallax-content > div {
-  padding: 80px 0px;
+.react-parallax-content > div.parallax{
+    padding: 80px 0px;
 }
 
 .parallax-content {

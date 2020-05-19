@@ -11,7 +11,7 @@ function SecondCard() {
     <div>
       <div className="container-fluid mt-3">
         <div className="row">
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson1} alt="" />
               <Card.Body>
@@ -22,7 +22,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson2} alt="" />
               <Card.Body>
@@ -33,7 +33,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson3} alt="" />
               <Card.Body>
@@ -44,7 +44,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson4} alt="" />
               <Card.Body>
@@ -55,7 +55,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson5} alt="" />
               <Card.Body>

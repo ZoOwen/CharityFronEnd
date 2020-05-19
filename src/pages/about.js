@@ -25,15 +25,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="OurStory">
+      <div className="container OurStory">
         <h2>
           Cerita
           <span>Kami</span>
         </h2>
-        <p className="about-description">Penggalangan dana dan pinjaman dana</p>
+        <p>Penggalangan dana dan pinjaman dana</p>
       </div>
-      <div className="middle-content">
-        <div className="container ml-5 mr-5 p-0">
+      {/* <div className="container middle-content"> */}
+        <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-6 col-xs-12 m-b30">
               <img className="content-img" alt="" src={contentImage} />
@@ -56,7 +56,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       <ParallaxContent />
       <div className="last-content">
         <h2>

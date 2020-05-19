@@ -51,6 +51,7 @@ function Login() {
               value={userSignIn.email}
               onChange={(e) => handleChange("email", e.target.value)}
               placeholder="Email"
+              required
             />
             <label htmlFor="email" className="animated-label">
               Username
@@ -65,6 +66,7 @@ function Login() {
               value={userSignIn.password}
               onChange={(e) => handleChange("password", e.target.value)}
               placeholder="Password"
+              required
             />
             <label htmlFor="password" className="animated-label">
               Password

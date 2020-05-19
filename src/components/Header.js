@@ -90,6 +90,9 @@ function Header(props) {
     }
     history.push("/");
     setShow(false);
+    setImg("");
+    setJudulEvent("");
+    setDeskripsiEvent("");
   };
   return (
     <div>
@@ -144,7 +147,7 @@ function Header(props) {
               className="mx-2"
               onClick={() => props.history.push("/profile")}
             >
-              Profile
+              Profil
             </Nav.Link>
             {localStorage.getItem("token") === null ? (
               <Nav.Link
@@ -187,7 +190,6 @@ function Header(props) {
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label>Upload Image :</Form.Label>
               <Form.Control
-                type="file"
                 name="Img"
                 placeholder="Upload gambar"
                 value={Img}

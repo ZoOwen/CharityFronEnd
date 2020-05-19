@@ -37,11 +37,7 @@ function CardView(props) {
               className="card  rounded-lg border-0 cardhistory"
               key={item.Id}
             >
-              <img
-                src="https://cdn.thelifeyoucansave.org/uploads/2019/11/Screen-Shot-2015-07-13-at-1.53.34-PM.png"
-                className="card-img-top"
-                alt="..."
-              />
+              <img src={item.Img} className="card-img-top" alt="..." />
 
               <div className="card-body">
                 <div className="card-title">

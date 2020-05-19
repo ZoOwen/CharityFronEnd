@@ -48,13 +48,13 @@ function Profile() {
               src="https://www.kindpng.com/picc/b/451/4517876.png"
             />
             <h3>
-              <strong>Personal Profile</strong>
+              <strong>Informasi Personal</strong>
             </h3>
             <center>
               <table>
                 <thead>
                   <tr>
-                    <td>Username </td>
+                    <td>Nama </td>
                     <td> : </td>
                     <td>{dataUser.items.Name}</td>
                   </tr>
@@ -64,7 +64,7 @@ function Profile() {
                     <td>{dataUser.items.Email}</td>
                   </tr>
                   <tr>
-                    <td>Address </td>
+                    <td>Alamat </td>
                     <td> : </td>
                     <td>{dataUser.items.Address}</td>
                   </tr>

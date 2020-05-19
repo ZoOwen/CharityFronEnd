@@ -51,10 +51,7 @@ function CardView(props) {
         <div className="row">
           {filterEvent.map((item, index) => (
             <Card style={{ width: "18rem" }} key={item.Id}>
-              <Card.Img
-                variant="top"
-                src="https://cdn.thelifeyoucansave.org/uploads/2019/11/Screen-Shot-2015-07-13-at-1.53.34-PM.png"
-              />
+              <Card.Img variant="top" src={item.Img} />
               <Card.Body>
                 <Card.Title>{item.JudulEvent}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">

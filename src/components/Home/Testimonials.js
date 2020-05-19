@@ -26,7 +26,8 @@ const Testimonials = () => {
         <div data-aos="zoom-in-up" className="row">
           <div className="col mt-3">
             <img
-              width="250px"
+              className="rounded"
+              width="200px"
               src="https://charity.w3itexperts.com/images/testimonials/pic1.jpg"
               alt="img"
             />
@@ -36,16 +37,19 @@ const Testimonials = () => {
               <strong>Faisal Adrus</strong>
             </h4>
             <h6 style={{ color: "#F75D08" }}>Volunteer</h6>
-            <p className="text-dark">
-              "Bagus dalam memberikan support, fleksible memberikan opsi
-              layanan, proses cepat, dan informasi sangat terbuka. Semoga
-              kedepan semakin baik pelayanannya."
-            </p>
+            <i className="text-dark">
+              <strong>
+                "Bagus dalam memberikan support, fleksible memberikan opsi
+                layanan, proses cepat, dan informasi sangat terbuka. Semoga
+                kedepan semakin baik pelayanannya."
+              </strong>
+            </i>
           </div>
           <div className="col mt-3">
             <img
-              width="250px"
-              src="https://charity.w3itexperts.com/images/testimonials/pic1.jpg"
+              className="rounded"
+              width="200px"
+              src="https://charity.w3itexperts.com/images/testimonials/pic2.jpg"
               alt="img"
             />
           </div>
@@ -54,11 +58,13 @@ const Testimonials = () => {
               <strong>Jonathan Adrus</strong>
             </h4>
             <h6 style={{ color: "#F75D08" }}>Volunteer</h6>
-            <p className="text-dark">
-              "Saya salut dengan tim pelayanan Charity, walaupun mereka bukan
-              bagian dari permasalahan tentang website, mereka tetap membantu
-              mengatasi masalah yg kami alami.."
-            </p>
+            <i className="text-dark">
+              <strong>
+                "Saya salut dengan tim pelayanan Charity, walaupun mereka bukan
+                bagian dari permasalahan tentang website, mereka tetap membantu
+                mengatasi masalah yg kami alami.."
+              </strong>
+            </i>
           </div>
         </div>
       </div>

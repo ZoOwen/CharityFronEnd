@@ -32,7 +32,11 @@ function Header(props) {
     }
   };
   const handleClose = () => setShow(false);
-
+  const handleLogoff = () => {
+    window.location.reload();
+    props.history.push("/");
+    localStorage.removeItem("token");
+  };
   const handleChangeImg = (e) => {
     setImg(e.target.value);
   };
@@ -48,8 +52,6 @@ function Header(props) {
   };
 
   const handlePostEvent = (e) => {
-    e.preventDefault();
-
     const id_user = id;
     const img = Img;
     const name = judulEvent;
@@ -80,6 +82,7 @@ function Header(props) {
         ? swal("Terimakasih", "Buat Event Berhasil!", "success")
         : swal("Gagal", "Harap Buat ulang", "error");
     }
+    history.push("/");
     setShow(false);
   };
   return (
@@ -137,6 +140,19 @@ function Header(props) {
             >
               Profile
             </Nav.Link>
+            {localStorage.getItem("token") === null ? (
+              <Nav.Link
+                href="#"
+                className="mx-2"
+                onClick={() => props.history.push("/login")}
+              >
+                Login
+              </Nav.Link>
+            ) : (
+              <Nav.Link href="#" className="mx-2" onClick={handleLogoff}>
+                LogOut
+              </Nav.Link>
+            )}
             {/* <Button
               variant="dark"
               className="ml-5 mr-1"

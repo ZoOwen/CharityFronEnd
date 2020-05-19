@@ -44,7 +44,7 @@ function Footer() {
               <p>Phone : 021-123-7890</p>
               <p>E-mail : info@charity.com</p>
               <p>
-                Address : Jalan Raya Kemang No.10, Jakarta Selatan,
+                Alamat : Jalan Raya Kemang No.10, Jakarta Selatan,
                 Jakarta-Indonesia
               </p>
             </div>

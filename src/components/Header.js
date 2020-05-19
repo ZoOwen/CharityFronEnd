@@ -138,7 +138,7 @@ function Header(props) {
               className="mx-2"
               onClick={() => props.history.push("/profile")}
             >
-              Profile
+              Profil
             </Nav.Link>
             {localStorage.getItem("token") === null ? (
               <Nav.Link
@@ -146,11 +146,11 @@ function Header(props) {
                 className="mx-2"
                 onClick={() => props.history.push("/login")}
               >
-                Login
+                Masuk
               </Nav.Link>
             ) : (
               <Nav.Link href="#" className="mx-2" onClick={handleLogoff}>
-                LogOut
+                Keluar
               </Nav.Link>
             )}
             {/* <Button

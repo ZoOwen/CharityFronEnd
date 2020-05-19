@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div>
       <Jumbotron
-        header="Contact Us"
+        header="Hubungi Kami"
         subtitle="Hubungi kami jika memiliki Pertanyaan"
       />
 
@@ -47,8 +47,8 @@ const Contact = () => {
               <strong>NO TELP</strong>
             </h3>
             <hr />
-            <h6 className="text-dark">+1 123-456-7890 or </h6>
-            <h6 className="text-dark pt-0">+1 123-456-7890</h6>
+            <h6 className="text-dark">+62 895-0373-1273 or </h6>
+            <h6 className="text-dark pt-0">+62 890-456-7890</h6>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ function CardView(props) {
 
   const dataEvent = props.mainEvent;
   var filterEvent = dataEvent.filter(function (event) {
-    return event.id_user == id;
+    return event.Id_user == id;
   });
 
   console.log("id decode", id);

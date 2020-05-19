@@ -37,7 +37,7 @@ const Contact = () => {
               <strong>E-MAIL</strong>
             </h3>
             <hr />
-            <h6 className="text-dark">info@charity.com or </h6>
+            <h6 className="text-dark">info@charity.com / </h6>
             <h6 className="text-dark pt-0">charity@gmail.com</h6>
           </div>
           <div className="col-md-4 my-3">
@@ -47,7 +47,7 @@ const Contact = () => {
               <strong>NO TELP</strong>
             </h3>
             <hr />
-            <h6 className="text-dark">+62 895-0373-1273 or </h6>
+            <h6 className="text-dark">+62 895-0373-1273 / </h6>
             <h6 className="text-dark pt-0">+62 890-456-7890</h6>
           </div>
         </div>

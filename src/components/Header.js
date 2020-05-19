@@ -11,9 +11,13 @@ function Header(props) {
   const history = useHistory();
   const isLogged = useSelector((state) => state.user);
 
+  const [Target, setTarget] = useState();
   var decode;
   var id;
-
+  const handleChangeTarget = (e) => {
+    setTarget(e.target.value);
+  };
+  console.log(Target, "target");
   if (localStorage.getItem("token") != null) {
     decode = jwt(localStorage.getItem("token"));
     id = decode.id;
@@ -56,6 +60,7 @@ function Header(props) {
     const img = Img;
     const name = judulEvent;
     const deskripsi = deskripsiEvent;
+    const target_donasi = Target;
     const event_type = 2;
     const tanggal = Date.now();
     const expire = Expire;
@@ -67,6 +72,7 @@ function Header(props) {
         img,
         name,
         deskripsi,
+        target_donasi,
         event_type,
         tanggal,
         expire,
@@ -138,7 +144,7 @@ function Header(props) {
               className="mx-2"
               onClick={() => props.history.push("/profile")}
             >
-              Profil
+              Profile
             </Nav.Link>
             {localStorage.getItem("token") === null ? (
               <Nav.Link
@@ -195,6 +201,20 @@ function Header(props) {
                 onChange={handleChangeJudul}
               />
             </Form.Group>
+            <Form.Label>Target Donasi:</Form.Label>
+            <select
+              name="target"
+              className="form-control"
+              value={Target}
+              onChange={handleChangeTarget}
+              as="select"
+            >
+              <option value="1000000">1000000</option>
+              <option value="5000000">5000000</option>
+              <option value="10000000">10000000</option>
+              <option value="15000000">15000000</option>
+              <option value="20000000">20000000</option>
+            </select>
             <Form.Label>Deskripsi Event :</Form.Label>
             <textarea
               className="form-control"

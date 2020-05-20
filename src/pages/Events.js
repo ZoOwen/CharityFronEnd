@@ -7,7 +7,6 @@ import swal from "sweetalert";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Axios from "axios";
-import Image from "react-bootstrap/Image";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 import { Button, Modal, Form } from "react-bootstrap";
@@ -161,7 +160,7 @@ const Events = () => {
                         let count =
                             (item.TotalDonasi / item.TargetDonasi) * 100;
                         return (
-                            <div className="card cardevent">
+                            <div className="card cardevent" key={item.Id}>
                                 <img
                                     src={item.Img}
                                     className="card-img-top"

@@ -32,7 +32,7 @@ function CardView(props) {
     <div className="container">
       <div className="row">
         {histori.map((item, index) => (
-          <div className="col-md-4 col-sm-12">
+          <div className="col-md-4 col-sm-12" key="index">
             <div
               className="card  rounded-lg border-0 cardhistory"
               key={item.Id}

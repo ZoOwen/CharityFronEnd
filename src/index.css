@@ -113,7 +113,7 @@ code {
 
 .cardevent{
     box-shadow: 0px 0px 2px 1px rgba(107, 107, 107, 0.3);
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(255, 250, 250);
 }
 
 .cardevent a{
@@ -136,7 +136,7 @@ code {
 /* start history */
 .cardhistory{
     box-shadow: 0px 0px 2px 1px rgba(107, 107, 107, 0.3);
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(255, 250, 250);
 }
 
 

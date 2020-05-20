@@ -54,7 +54,9 @@ function CardView(props) {
                 <p className="text-dark my-0">Total donasi</p>
                 <div className="eventp">
                   <p className="text-dark">Rp.{item.TotalDonasi}</p>
-                  <p className="text-dark">3 Donatur</p>
+                  <p className="text-dark">
+                    Target Donasi Rp.{item.TargetDonasi}
+                  </p>
                 </div>
               </div>
             </div>

@@ -129,10 +129,10 @@ function HistoryDesc(props) {
               <td>No</td>
               <td>Donatur Name</td>
               <td>total Donate</td>
-              <td>date</td>
               <td>Metode</td>
+              <td>Tanggal Donasi</td>
               {/* <td>Status</td> */}
-              <td>Action</td>
+              {/* <td>Action</td> */}
             </tr>
           </thead>
 
@@ -145,7 +145,7 @@ function HistoryDesc(props) {
                 <td>{item.Metode}</td>
                 <td>{item.Tgl}</td>
                 {/* <td>{item.sts.toString()}</td> */}
-                <td>
+                {/* <td>
                   {singleDetEvent.Status === "Lunas" ? (
                     <button
                       className="btn btn-primary"
@@ -170,7 +170,7 @@ function HistoryDesc(props) {
                       PayBack
                     </button>
                   )}
-                </td>
+                </td> */}
               </tr>
             </tbody>
           ))}

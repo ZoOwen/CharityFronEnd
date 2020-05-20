@@ -1,17 +1,17 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import imgPerson1 from "../../assets/img/raif.jpeg";
-import imgPerson2 from "../../assets/img/jumadi.jpeg";
-import imgPerson3 from "../../assets/img/khairavi.jpeg";
-import imgPerson4 from "../../assets/img/rubi.jpeg";
-import imgPerson5 from "../../assets/img/zaki.jpeg";
+import imgPerson1 from "../../assets/img/profil/raif.jpeg";
+import imgPerson2 from "../../assets/img/profil/jumadi.jpeg";
+import imgPerson3 from "../../assets/img/profil/khairavi.jpeg";
+import imgPerson4 from "../../assets/img/profil/rubi.jpeg";
+import imgPerson5 from "../../assets/img/profil/zaki.jpeg";
 
 function SecondCard() {
   return (
     <div>
       <div className="container-fluid mt-3">
         <div className="row">
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson1} alt="" />
               <Card.Body>
@@ -22,7 +22,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson2} alt="" />
               <Card.Body>
@@ -33,7 +33,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson3} alt="" />
               <Card.Body>
@@ -44,7 +44,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson4} alt="" />
               <Card.Body>
@@ -55,7 +55,7 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
-          <div className="col d-flex justify-content-center">
+          <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson5} alt="" />
               <Card.Body>

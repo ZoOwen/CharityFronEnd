@@ -97,7 +97,7 @@ function Header(props) {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" className="py-3">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <img
             src="https://charity.w3itexperts.com/images/logo.png"
             alt="img"

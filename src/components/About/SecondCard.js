@@ -44,6 +44,10 @@ function SecondCard() {
               </Card.Body>
             </Card>
           </div>
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div className="row">
           <div className="col d-flex justify-content-center my-2">
             <Card style={{ width: "15rem" }}>
               <Card.Img variant="top" src={imgPerson4} alt="" />

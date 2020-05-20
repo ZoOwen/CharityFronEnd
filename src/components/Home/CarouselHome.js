@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
+import { withRouter } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 import { Carousel, Button } from "react-bootstrap";
 
-const CarouselHome = () => {
+const CarouselHome = (props) => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -34,6 +35,7 @@ const CarouselHome = () => {
               Donatur).
             </p>
             <Button
+              onClick={() => props.history.push("/about")}
               size="sm"
               style={{ backgroundColor: "#F75D08", border: "none" }}
               className="mr-5 btn-carousel"
@@ -66,6 +68,7 @@ const CarouselHome = () => {
               dapat terjadi lebih efektif dan efisien.
             </p>
             <Button
+              onClick={() => props.history.push("/about")}
               size="sm"
               style={{ backgroundColor: "#F75D08", border: "none" }}
               className="mr-5 btn-carousel"
@@ -96,6 +99,7 @@ const CarouselHome = () => {
               <br /> setidaknya jangan sakiti mereka.
             </p>
             <Button
+              onClick={() => props.history.push("/about")}
               size="sm"
               style={{ backgroundColor: "#F75D08", border: "none" }}
               className="mr-5 btn-carousel"
@@ -109,4 +113,4 @@ const CarouselHome = () => {
   );
 };
 
-export default CarouselHome;
+export default withRouter(CarouselHome);

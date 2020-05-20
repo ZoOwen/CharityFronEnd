@@ -1,10 +1,11 @@
 /** @format */
 
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 import { Button } from "react-bootstrap";
 
-function Section1Home() {
+function Section1Home(props) {
   return (
     <div className="container my-5">
       <div className="row">
@@ -34,7 +35,11 @@ function Section1Home() {
                 Bagi Anda yang ingin menolong sesama dapat dengan mudah
                 mengirimkan bantuan dengan donasi online.
               </p>
-              <Button variant="dark" className=" mr-1">
+              <Button
+                onClick={() => props.history.push("/about")}
+                variant="dark"
+                className=" mr-1"
+              >
                 Tentang Kita
               </Button>
             </div>
@@ -66,6 +71,7 @@ function Section1Home() {
               </p>
 
               <Button
+                onClick={() => props.history.push("/events")}
                 style={{
                   backgroundColor: "#F75D08",
                   border: "none",
@@ -82,4 +88,4 @@ function Section1Home() {
   );
 }
 
-export default Section1Home;
+export default withRouter(Section1Home);

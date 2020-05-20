@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
+import swal from "sweetalert";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Register.css";
 import {
@@ -25,7 +26,7 @@ function Register(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (password !== confPassword) {
-      alert("Your input password does not match to confirm password");
+      swal("Gagal Daftar", "Silahkan Ulangi setelah beberpa saat!", "error");
     } else {
       var bodyFormData = new FormData();
       bodyFormData.set("telp", telp);
@@ -35,6 +36,8 @@ function Register(props) {
       bodyFormData.set("password", password);
       props.postDataSignUp(bodyFormData);
       props.history.push("/login");
+
+      swal("Berhasil!", "Buat Akun Berhasil!", "success");
     }
   };
 

@@ -358,12 +358,12 @@ const Events = () => {
             <Footer />
             <Modal show={show} onHide={handleClose} animation={false}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>Donasi</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form className="my-0">
                         <Form.Group controlId="exampleForm.ControlInput1">
-                            <Form.Label>Donasi Berapa:</Form.Label>
+                            <Form.Label>Jumlah Donasi:</Form.Label>
                             <Form.Control
                                 type="number"
                                 name="donasi"
@@ -397,7 +397,7 @@ const Events = () => {
                             }}
                             className="my-5"
                         >
-                            Donate Now
+                            Donasi
                         </Button>
                     </Form>
                 </Modal.Body>

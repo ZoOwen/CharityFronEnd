@@ -63,7 +63,7 @@ const RecentHome = () => {
                 className="col d-flex justify-content-center"
                 key={item.ID}
               >
-                <Card style={{ width: "18rem" }} className="my-4 cart-event">
+                <Card style={{ width: "18rem" }} className="my-4 cart-recent">
                   <Card.Img variant="top" src={item.img} />
                   <Card.Body>
                     <Card.Title>{item.title}</Card.Title>

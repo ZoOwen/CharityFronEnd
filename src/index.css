@@ -84,6 +84,14 @@ code {
 
 /* ----- End Section 2 ----- */
 
+/* ---Recent Post------ */
+
+.cart-recent {
+  border-radius: 5px;
+  box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+}
+/* ----end Recent Post---- */
+
 /* -------Events -------- */
 
 /* .img-event {

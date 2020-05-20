@@ -23,8 +23,8 @@ export const postSignIn = (values, history, event) => (dispatch) => {
 
                 dispatch(getSignIn(response.data));
                 swal({
-                    title: "Good job!",
-                    text: "Login success!",
+                    title: "Selamat!",
+                    text: "Anda berhasil login!",
                     icon: "success",
                 });
                 history.push("/");
@@ -33,8 +33,8 @@ export const postSignIn = (values, history, event) => (dispatch) => {
 
         .catch(() =>
             swal({
-                title: "Warning!",
-                text: "Login failed!",
+                title: "Maaf!",
+                text: "Gagal login",
                 icon: "error",
             })
         );

@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import imgPerson1 from "../../assets/img/raif.jpeg";
-import imgPerson2 from "../../assets/img/jumadi.jpeg";
-import imgPerson3 from "../../assets/img/khairavi.jpeg";
-import imgPerson4 from "../../assets/img/rubi.jpeg";
-import imgPerson5 from "../../assets/img/zaki.jpeg";
+import imgPerson1 from "../../assets/img/profil/raif.jpeg";
+import imgPerson2 from "../../assets/img/profil/jumadi.jpeg";
+import imgPerson3 from "../../assets/img/profil/khairavi.jpeg";
+import imgPerson4 from "../../assets/img/profil/rubi.jpeg";
+import imgPerson5 from "../../assets/img/profil/zaki.jpeg";
 
 function SecondCard() {
   return (

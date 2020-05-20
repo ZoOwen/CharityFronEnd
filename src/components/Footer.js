@@ -41,7 +41,7 @@ function Footer() {
             <div className="col-md-3">
               <h4>Info kontak</h4>
               <hr />
-              <p>Telepon : 021-123-7890</p>
+              <p>Telepon : +6221-1213-7890</p>
               <p>E-mail : info@charity.com</p>
               <p>
                 Alamat : Jalan Raya Kemang No.10, Jakarta Selatan,

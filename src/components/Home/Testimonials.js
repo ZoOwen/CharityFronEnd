@@ -1,5 +1,7 @@
 import React from "react";
 // "https://charity.w3itexperts.com/images/testimonials/pic1.jpg"
+import img1 from "../../assets/img/bayu.jpeg";
+import img2 from "../../assets/img/dani.jpeg";
 const Testimonials = () => {
   return (
     <div>
@@ -28,7 +30,7 @@ const Testimonials = () => {
             <img
               className="rounded"
               width="200px"
-              src="https://charity.w3itexperts.com/images/testimonials/pic1.jpg"
+              src={img1}
               alt="img"
             />
           </div>
@@ -36,7 +38,7 @@ const Testimonials = () => {
             <h4 className="text-dark">
               <strong>Faisal Adrus</strong>
             </h4>
-            <h6 style={{ color: "#F75D08" }}>Volunteer</h6>
+            <h6 style={{ color: "#F75D08" }}>Donatur</h6>
             <i className="text-dark">
               <strong>
                 "Bagus dalam memberikan support, fleksible memberikan opsi
@@ -49,7 +51,7 @@ const Testimonials = () => {
             <img
               className="rounded"
               width="200px"
-              src="https://charity.w3itexperts.com/images/testimonials/pic2.jpg"
+              src={img2}
               alt="img"
             />
           </div>
